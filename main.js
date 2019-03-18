@@ -3,7 +3,7 @@ $(() => {
    let getTable;
      $(".available").on("click", reserveTable);
      // $("#container").css("display", "none");
-     // $("#hiddenForm").css("display", "block");
+     $("#hiddenForm").css("display", "none");
      $("#btnSave").on("click", saveTable);
      $("#btnClose").on("click", close);
 
