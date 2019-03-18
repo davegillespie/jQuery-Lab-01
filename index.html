@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>jQuery Manipulation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+</head>
+<body>
+
+    <div id="heading" class="main-container">
+      <h1>Table Finder</h1>
+      <p>Pick your table now</p>
+    </div>
+
+      <div class="container">
+        <button class="circle" id="available">1</button>
+        <button class="circle" id="reserved">2</button>
+        <button class="circle" id="available">3</button>
+        <button class="circle" id="available">4</button>
+        <button class="circle" id="available">5</button>
+        <button class="circle" id="reserved">6</button>
+        <button class="circle" id="available">7</button>
+        <button class="circle" id="available">8</button>
+        <button class="circle" id="available">9</button>
+      </div>
+
+
+
+<!-- Needs to be adjusted / hidden etc, still: -->
+    <div class="column">
+        <!-- <form id="hiddenForm" style="display: none;"> -->
+        <div id="hiddenForm" class="hide">
+         <button id="btnClose">X</button>
+          <h3>New Reservation</h3>
+           <div class="table-number">Table Number:
+             <a id="tabledClicked" class="field"></a>
+           </div>
+            <div class="field">
+                <div class="control">
+                  <input class="input" onfocus="this.value=''" value="Name" type="text" id="firstInput" name="firstInput" />
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <input class="input" onfocus="this.value=''" value="Phone Number" type="text" id="secondInput" name="secondInput" />
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                      <input class="input" onfocus="this.value=''" value="Seat Number" type="text" id="thirdInput" name="thirdInput" />
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <button class="btnSave" id="btnSave">SAVE</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+    <!-- Note that js that uses jquery must come AFTER jquery -->
+    <script src="main.js"></script>
+</body>
+</html>
