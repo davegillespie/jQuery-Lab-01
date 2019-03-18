@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>jQuery Manipulation</title>
+    <title>jQuery Lab 01</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
 </head>
@@ -14,52 +14,37 @@
       <p>Pick your table now</p>
     </div>
 
-      <div class="container">
-        <button class="circle" id="available">1</button>
-        <button class="circle" id="reserved">2</button>
-        <button class="circle" id="available">3</button>
-        <button class="circle" id="available">4</button>
-        <button class="circle" id="available">5</button>
-        <button class="circle" id="reserved">6</button>
-        <button class="circle" id="available">7</button>
-        <button class="circle" id="available">8</button>
-        <button class="circle" id="available">9</button>
+      <div id="container">
+        <button class="btn available" id="circle">1</button>
+        <button class="btn reserved"  id="circle">2</button>
+        <button class="btn available"  id="circle">3</button>
+        <button class="btn available"  id="circle">4</button>
+        <button class="btn available"  id="circle">5</button>
+        <button class="btn reserved"  id="circle">6</button>
+        <button class="btn available"  id="circle">7</button>
+        <button class="btn available"  id="circle">8</button>
+        <button class="btn available"  id="circle">9</button>
       </div>
 
 
 
 <!-- Needs to be adjusted / hidden etc, still: -->
-    <div class="column">
+    <div id="column">
         <!-- <form id="hiddenForm" style="display: none;"> -->
         <div id="hiddenForm" class="hide">
-         <button id="btnClose">X</button>
-          <h3>New Reservation</h3>
-           <div class="table-number">Table Number:
-             <a id="tabledClicked" class="field"></a>
+          <button id="btnClose">X</button>
+            <h3>New Reservation</h3>
+           <div id="table-number">Table Number:
+             <a id="tabledClicked"></a>
            </div>
-            <div class="field">
-                <div class="control">
-                  <input class="input" onfocus="this.value=''" value="Name" type="text" id="firstInput" name="firstInput" />
-                </div>
-            </div>
-            <div class="field">
-                <div class="control">
-                    <input class="input" onfocus="this.value=''" value="Phone Number" type="text" id="secondInput" name="secondInput" />
-                </div>
-            </div>
-            <div class="field">
-                <div class="control">
-                      <input class="input" onfocus="this.value=''" value="Seat Number" type="text" id="thirdInput" name="thirdInput" />
-                </div>
-            </div>
-            <div class="field">
-                <div class="control">
-                    <button class="btnSave" id="btnSave">SAVE</button>
 
-                </div>
-            </div>
+            <input class="input" onfocus="this.value=''" value="Name" type="text" id="firstInput" name="firstInput" />
+            <input class="input" onfocus="this.value=''" value="Phone Number" type="text" id="secondInput" name="secondInput" />
+            <input class="input" onfocus="this.value=''" value="Seat Number" type="text" id="thirdInput" name="thirdInput" />
+            <button class="btnSaveButton" id="btnSave">SAVE</button>
+
         </div>
-    </div>
+      </div>
 
 
 
