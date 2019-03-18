@@ -7,6 +7,7 @@ $(() => {
      $("#btnSave").on("click", saveTable);
      $("#btnClose").on("click", close);
 
+
      function reserveTable() {
        if ($(this).hasClass('reserved')) {
            return;
@@ -27,14 +28,12 @@ $(() => {
           getTable.addClass("reserved");
           $("#container").css("display", "block");
           $("#hiddenForm").css("display", "none");
-
         }
+
 
         function close() {
             $("#container").css("display", "block");
             $("#hiddenForm").css("display", "none");
         }
-
-
 
  });
